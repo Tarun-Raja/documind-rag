@@ -1,0 +1,6 @@
+Question,Best Performing Method,Retrieval Relevance,Answer Groundedness,Answer Quality,Comment
+What is the Transformer model based on?,Hybrid RAG,High,High,Good,"The retrieved chunks mention attention and self-attention, allowing RAG to generate a grounded answer."
+What does BERT stand for?,TF-IDF / Hybrid RAG,High after hybrid retrieval,High,Good,TF-IDF retrieved the exact definition better than embedding-only retrieval. Hybrid RAG improved the final answer.
+What is Retrieval-Augmented Generation?,Hybrid RAG,High,High,Good,"The retrieved RAG chunks explained parametric and non-parametric memory, supporting a clear answer."
+Why is attention useful in sequence transduction?,Embedding Retrieval / Hybrid RAG,High,High,Good,Embedding retrieval performed well because this was a conceptual question.
+How does RAG combine parametric memory and non-parametric memory?,TF-IDF / Hybrid RAG,High,High,Good,TF-IDF performed strongly because the question used exact technical terms from the document.

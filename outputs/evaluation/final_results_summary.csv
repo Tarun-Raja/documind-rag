@@ -1,0 +1,10 @@
+Component,Result,Importance
+Text Extraction,Extracted machine-readable text from academic PDFs.,Converted documents into text for NLP processing.
+Text Cleaning and Preprocessing,"Removed major PDF noise and demonstrated tokenization, normalization, stopword removal, and lemmatization.",Improved text quality and satisfied classical NLP requirements.
+Linguistic Analysis,Demonstrated POS tagging and dependency parsing.,Showed grammatical and structural analysis of academic text.
+Encoding Techniques,"Demonstrated Bag of Words, TF-IDF, and sentence embeddings.",Converted text into numerical representations.
+TF-IDF Retrieval,Performed well for exact keyword and definition-based questions.,Served as the classical NLP retrieval baseline.
+Embedding Retrieval,Performed well for semantic and conceptual questions.,Enabled meaning-based search using FAISS.
+Hybrid Retrieval,Combined TF-IDF and embedding retrieval.,Improved retrieval quality for both exact and conceptual questions.
+RAG Answer Generation,Generated grounded answers using Gemini API and retrieved context.,Produced explainable document-based answers.
+Streamlit Interface,Planned as a separate GitHub deployment interface.,Improves usability and shows practicality
