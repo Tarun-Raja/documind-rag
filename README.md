@@ -113,19 +113,83 @@ Run the app:
 
     streamlit run app/streamlit_app.py
 
-## Gemini API Key
+## Setting Up the Gemini API Key
 
-The app requires a Gemini API key.
+The Streamlit app requires a Gemini API key for answer generation.
 
-For local Streamlit usage, create this file:
+### Step 1: Get a Gemini API Key
 
-    .streamlit/secrets.toml
+1. Go to Google AI Studio:
 
-Add your API key inside it:
+   ```
+   https://aistudio.google.com/app/apikey
+   ```
 
-    GEMINI_API_KEY = "your_api_key_here"
+2. Sign in with your Google account.
 
-Do not upload secrets.toml to GitHub.
+3. Click **Create API Key**.
+
+4. Copy the generated API key.
+
+### Step 2: Create the `.streamlit` Folder
+
+Inside the project root folder, create a folder named:
+
+```
+.streamlit
+```
+
+Final structure:
+
+```
+documind-rag/
+└── .streamlit/
+```
+
+### Step 3: Create `secrets.toml`
+
+Inside the `.streamlit` folder, create a file named:
+
+```
+secrets.toml
+```
+
+### Step 4: Add the API Key
+
+Open `secrets.toml` and add:
+
+```
+GEMINI_API_KEY = "your_actual_api_key_here"
+```
+
+Example:
+
+```
+GEMINI_API_KEY = "AIzaSyxxxxxxxxxxxxxxxx"
+```
+
+### Step 5: Run the Streamlit App
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+Run the app:
+
+```
+streamlit run app/streamlit_app.py
+```
+
+The app will now securely access the Gemini API key through Streamlit secrets.
+
+### Important
+
+Do not upload `secrets.toml` to GitHub.
+
+The `.gitignore` file already excludes it automatically.
+
 
 ## Modular Project Structure
 
