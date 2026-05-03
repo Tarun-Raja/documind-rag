@@ -167,6 +167,21 @@ Example:
 ```
 GEMINI_API_KEY = "AIzaSyxxxxxxxxxxxxxxxx"
 ```
+## spaCy Model Setup
+
+The project uses the spaCy English language model:
+
+```
+en_core_web_sm
+```
+
+After installing the project requirements, run:
+
+```
+python -m spacy download en_core_web_sm
+```
+
+This downloads the language model required for lemmatization and other NLP tasks.
 
 ### Step 5: Run the Streamlit App
 
